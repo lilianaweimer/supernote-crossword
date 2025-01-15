@@ -22,9 +22,6 @@ function getNYTC(date) {
     }, (res) => {
       if (res.statusCode === 200) {
         const data = [];
-        res.on('error', (err) => {
-          reject(err);
-        });
         res.on('data', (chunk) => {
           data.push(chunk);
         });
@@ -32,7 +29,7 @@ function getNYTC(date) {
           resolve(Buffer.concat(data));
         });
       } else {
-        reject(res.statusCode);
+        reject(new Error(`Failed to fetch crossword: ${res.statusCode} ${res.statusMessage}`));
       }
     });
     req.on('error', (err) => {
