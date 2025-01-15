@@ -10,4 +10,4 @@ Downloads tomorrow's crosswords into a designated Dropbox folder.
 Adapted from https://nathanbuchar.com/automatically-uploading-the-nyt-crossword-supernote/
 
 ## Status:
-[![cron](https://github.com/arichiv/supernote-crossword/actions/workflows/cron.yml/badge.svg)](https://github.com/arichiv/supernote-crossword/actions/workflows/cron.yml)
+[![cron](https://github.com/lilianaweimer/supernote-crossword/actions/workflows/cron.yml/badge.svg)](https://github.com/arichiv/supernote-crossword/actions/workflows/cron.yml)
